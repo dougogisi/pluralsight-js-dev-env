@@ -32,8 +32,17 @@ Using localtunnel
 - lt --port 3000 --subdomain ogisi (subdomain optional but creates better urls)
 
 
-Automation
+Automation (Task Runners)
 
 - Grunt (configuration driven, less code)
-- Gulp (using pipe, does not write to disc. Code based, write code)
-- npm
+- Gulp (using pipe, does not write to disc. Code based, write code, does not write files to disk,
+        you write actual javascript code)
+- npm: Declared in script section of package.json file. Great for cross platform Automation
+       Grants access to all the functionality of command line
+       Access to all the commandline functionality
+       Even call sepate scripts that use node
+       Use tools/packages directly rather than through abstraction layer like grunt or Gulp
+       No need for separate plugin
+       Simpler debugging
+       Better docs
+       Simple
