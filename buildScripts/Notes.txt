@@ -1,0 +1,39 @@
+Servers
+- Express
+  (Lightwieght, highly configurable, not just for static files, production ready. Great for not)
+  Competitors
+  - Koa
+  - Hapi
+  All good for serverside node apps.
+
+- Webpack (comes with inbuilt server)
+- http-server (Simpliest, Lightweight .. no config)
+- live-server (Lightweight ... live reloading)
+- browsersync
+
+Your decision for server may also be dependent on your bundler as they often come with their own server or
+with support for particular servers. Budo is great to browserify (includes hot reloading)
+Webpack comes with its own webserver. Serves app from memory
+
+- Browsersync: free webserver. Sets up dedicated IP on LAN. Can sync all changes across varios access point.
+great for cross browser testing.
+
+Sharing Work In progress
+
+- localtunnel (easiest install. punches hole through firewall to expose local machine port. Ultra versatile)
+- ngrok (requires a few extra steps to sort. ngrok is more secure. Password protection)
+- now (publishes up to an actual web server, deploys up to the cloud. Does not punch hole in firework. Only host static files)
+- surge (supoort only static html and js)
+
+
+Using localtunnel
+
+- npm install localtunnel -g (install globally)
+- lt --port 3000 --subdomain ogisi (subdomain optional but creates better urls)
+
+
+Automation
+
+- Grunt (configuration driven, less code)
+- Gulp (using pipe, does not write to disc. Code based, write code)
+- npm
