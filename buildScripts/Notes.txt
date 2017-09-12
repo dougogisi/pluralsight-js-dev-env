@@ -46,3 +46,36 @@ Automation (Task Runners)
        Simpler debugging
        Better docs
        Simple
+
+
+Transpiler
+Over 100 languages that transpile into javascript
+Key transpilers 
+- Babel
+1.  Enjoy all the new features of JS, even the experimental one.
+Transpiles them down to ES5
+11. Write with standardized JS
+111. This means you can use it out of the box with other mnodule
+iv. eg react and ESlint did not support typscript for a while
+v. Due to the power of ides like visual code along with lint
+and great libs most of the advantages of Typescript may not beneeded
+
+- TypeScript
+1. Superset of JS
+11. Enhanced autocompletion 
+111. Add type annotation to JS which add type safety which 
+enables Enhanced autocompletion.
+iv. Clarifies developer intent
+v. Enhanced readability
+vi. Addtional features like interfaces
+vi Requires type definition files and annotations for 
+autocompletion to work
+
+- Elm
+i. Nothing like js 
+ii. compiles down to JS
+iii. Immutable data structures
+iv. Friendly errors
+v. All errors are compile-time errors
+vi. Interops with JS
+v. Requires team to learn new lanaguage
