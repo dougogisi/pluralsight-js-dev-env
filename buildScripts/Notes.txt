@@ -79,3 +79,24 @@ iv. Friendly errors
 v. All errors are compile-time errors
 vi. Interops with JS
 v. Requires team to learn new lanaguage
+
+
+
+BABEL:
+
+Configuration
+- Package.json (Advantage: one less file in your project) 
+- .babelrc (Advantage is that its not npm specific)
+
+Transpile vs ES5
+
+ES5
+No waiting for transpile = faster
+No transpiler dependency
+
+
+Transpile
+Enojoy the lastest features
+Consistent coding style
+Use the same linting rules everywhere
+As node features increase eventually remove transpiler
