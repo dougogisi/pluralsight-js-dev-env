@@ -46,3 +46,24 @@ Automation (Task Runners)
        Simpler debugging
        Better docs
        Simple
+
+
+ES6 Modules
+
+- Standardized: no need to transpile  your code when platforms become compactible with ES6. Also easy
+for new developers to come up to speed
+- Statically Analyzable:
+  - Cannot be declared dynamically. Code can be read and analyzed in a predictable
+  because imports cannot be changed at runtime. This means there is improved autocomplete support and
+  Intelligent refactoring
+  - Fails fast
+  - Tree shaking
+
+- Easy to read
+  - Named imports
+  - Default imports
+
+
+  BUNDLER:
+
+
