@@ -120,3 +120,54 @@ for new developers to come up to speed
 
   BUNDLER:
 
+  Take all your JS files and intelligently package them for a target environment e.g browser or node
+
+
+Require JS: Popularized the AMD pattern. Has fallen out of favour. ES6 is the future
+
+
+Options:
+
+- Browserify
+  - first bundler to reach mass adoption
+  - Bundle npm packages for the web
+  - bundles code that uses common js pattern
+  - its design is plugin based
+  SIMPLE
+    - means you have to do more stuff for yourself. (CAn be use with rollup)
+
+- Webpack
+  - more than just JS
+  - can handle css, images etc like JS
+  - Can even inline styles if they are small enough
+  - Built in hot-reloading web server
+
+  COMPREHENSIVE. MOST FULL FEATURED
+  ABILITY TO INTELLIGENTLY BUNDLE GENERATE YOUR CSS, IMAGES, FONTS, HTML. MEANS YOU CAN
+  INLINE IMAGES VIA BASE64 ENCODING WHEN SMALL ENOUGH TO JUSTIFY SAVING IN HTTP REQUESTS AND
+  HOT RELOAD CSS CHANAGES VIA BUILT IN WEBSERVER
+
+  STRATEGIC BUNDLE SPLITTING SO YOU ARE ONLY LOADING WHEN NEEDED
+  HOT MODULE RELOADING
+
+- Rollup
+  - first to offer tree shaking. Removes stuff you dont need
+  - faster loading production code
+    this is because webpack and browserify have to inline a module loader
+    but rollup moves all code into the same scope
+  - Quite new
+  - Great for library authors
+  - No hot reloading and code splitting yet so may not be ideal for apps
+
+  TREE SHAKING AND PERFORMANCE BUT NEW SO MAKES MORE SENSE TO USE IT with
+  TOOLS LIKE JSPM AND BROWSERIFY OR USE BY ITSELF IF YOU ARE A LIBRARY AURTHOR
+  WEBPACK 2 WILL OFFER TREE SHAKING
+
+- JSPM
+  - Uses SystemJS, a universial module loader
+  - bundles code at runtime rather than at compile time like webpack and browserify
+  - has its own package managaer
+  - Can install from npm, git
+  - Uses Rollup
+
+  RUNTIME LOADER AND ONLY ONE WITH PACKAGE MANAGER
