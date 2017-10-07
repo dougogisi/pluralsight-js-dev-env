@@ -171,3 +171,9 @@ Options:
   - Uses Rollup
 
   RUNTIME LOADER AND ONLY ONE WITH PACKAGE MANAGER
+
+Sourcemaps 
+
+Allows you to debug mimified/bundled JS scripts
+
+Linter
