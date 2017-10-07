@@ -174,6 +174,65 @@ Options:
 
 Sourcemaps 
 
-Allows you to debug mimified/bundled JS scripts
+Allows you to debug mimified/bundled JS script by 
+Downloading the plain js files when the dev tools
+window is opened.
 
-Linter
+
+LINTERS
+
+- Enforce consistency and avoid mistakes
+ Options
+
+- JSLint
+- JS Hint (improvement on JSLint)
+- ESLint (Defacto standard)
+
+*Note: If you are working with typescript you will 
+need to use TSLint for now as ESlint does not support
+TypeScript.
+
+Core Decisions for configuring ESlint
+- COnfig Format?
+  - .eslintrc
+- Which Built-in rules?
+  - decide with team what rules to enable
+- Warnings or errors?
+  - Warning do not break build
+  - Errors break build. Cant be ignored
+  - use both. wanring for minor stylistic issues
+  and errors for larger things. Some rules for error
+  and some for errors
+
+- Which plugins?
+  - eslint-plugin-react
+
+- Use presets instead?
+  - Comes with presets.
+  - ue standard for base and then tweak
+  - or use existing like airbnb and standardjs
+  
+
+  No Watch setting for ESlint. 2 Options
+
+  - ESLint-loader
+    - Re-lints all files upon save (tied to webpack) 
+
+  - ESLint-watch
+    - Wrapper around ESLint that adds file watch
+    - Not tied to webpack
+    - Better warning/error formatting
+    - display clean message
+    - Easily lint all files including tests and build scripts
+
+  ESLint does not support js experimental features.
+  FOr that you need to use babel-eslint
+
+
+
+
+
+
+
+
+
