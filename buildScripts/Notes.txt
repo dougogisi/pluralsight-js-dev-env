@@ -229,7 +229,11 @@ Core Decisions for configuring ESlint
   FOr that you need to use babel-eslint
 
 
-
+WHy lint as part of build?
+- One place to check for code quality feedback.
+- universal configuration
+- part of continuous integration in case a dev ignores
+lint Warnings
 
 
 
