@@ -314,5 +314,33 @@ Things to consider
 
 
 
+Continuous integration (CI)
+
+- Notifies you as soon as a build Fails
+- Catch mistakes quickly
+- Builds on commit
+- Runs all tests
+- Check code coverage
+- Automate deployment
+
+- Travis
+  - linux based
+
+- Appveyor
+  - windows based
+
+- Jenkins
+  - highly configurable
+
+- CircleCI
+- Semaphore
+- SnapCI 
+
+Travis and Jenkins the most popular. 
+Travis is a hosted solution
+Jenkins good if you want to host your own CI server
+
+
+
 
 
