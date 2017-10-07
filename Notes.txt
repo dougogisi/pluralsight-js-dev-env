@@ -242,3 +242,44 @@ ESLint Rule Override
 
 When using lint in npm script disable linting editor
 as it may override our linting rules in .eslintrc
+
+
+Automated Testing
+
+Unit Testing Decisions
+
+Things to consider
+
+- Framework
+  - Mocha: popular (more configurable than jasmine)
+  - Jasmine: similar .. comes with assertion library
+  - Tape: leanest and simpliest (simplicity is its strength)
+  - Qunit: Oldest, created for testing jQUery by jQuery 
+  creator
+  - Ava: Newest, offers new features, runs tests in parallel
+  and only reruns impacted tests
+  - Jest: from facebook, wrapper over jasmine
+
+- Assertion library
+  - Not all frameworks come with an assertion library.
+  - Most popular is Chai. 
+
+- Helper Libraries
+  - JSDOM: Simulates browser's DOM: Run DOM-related tests without a browser
+  - Cheerio: Jquery for the server. Query virtual DOM using jQuery selectors
+  
+- Where to run tests
+  - Browser (opening an actual browser requires more configuration)
+    - Karma, Testem
+  - Headless Browser
+    - PhantomJS
+  In-memory DOM
+    - JSDOM: Simulate browser by creating a DOM in memory
+
+- Where to place tests
+- When to run tests
+
+
+
+
+
