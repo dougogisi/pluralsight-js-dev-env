@@ -277,7 +277,28 @@ Things to consider
     - JSDOM: Simulate browser by creating a DOM in memory
 
 - Where to place tests
+  - Centralized in single folder called test or similar
+    Mocha pushes you in this direction as it looks for tests
+    in the root of your project in a folder called test
+
+    - less "noise" in src folder (not necessarily true)
+    - Deployment confusion (people think this way prevents
+    deploying test file )
+    - Seperate folder not necessary and reasons not strong enough
+  
+  - Alongside
+    - Easy imports
+      import file from './file' vs '../../src/long/path'
+    - Clear visibility to tests 
+    - Convenient to open both at the same time
+    - No recreating folder structures
+    - Easy to move files as relative parts remain the same
+
 - When to run tests
+  - Unit tests should run everytime you hit save 
+    - Rapid feeedback
+    - Automatic
+    - Increases test visibility
 
 
 
