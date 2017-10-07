@@ -260,14 +260,20 @@ Things to consider
   and only reruns impacted tests
   - Jest: from facebook, wrapper over jasmine
 
+  MOCHA
+
 - Assertion library
   - Not all frameworks come with an assertion library.
   - Most popular is Chai. 
 
+  CHAI
+
 - Helper Libraries
   - JSDOM: Simulates browser's DOM: Run DOM-related tests without a browser
   - Cheerio: Jquery for the server. Query virtual DOM using jQuery selectors
-  
+
+  JSDOM
+
 - Where to run tests
   - Browser (opening an actual browser requires more configuration)
     - Karma, Testem
@@ -275,6 +281,8 @@ Things to consider
     - PhantomJS
   In-memory DOM
     - JSDOM: Simulate browser by creating a DOM in memory
+
+  NODE
 
 - Where to place tests
   - Centralized in single folder called test or similar
@@ -294,11 +302,15 @@ Things to consider
     - No recreating folder structures
     - Easy to move files as relative parts remain the same
 
+  ALONGSIDE
+
 - When to run tests
   - Unit tests should run everytime you hit save 
     - Rapid feeedback
     - Automatic
     - Increases test visibility
+
+    via Upon save
 
 
 
