@@ -235,8 +235,10 @@ WHy lint as part of build?
 - part of continuous integration in case a dev ignores
 lint Warnings
 
+ESLint Rule Override
+  - 0 off 
+  - 1 Warning
+  - 2 Error
 
-
-
-
-
+When using lint in npm script disable linting editor
+as it may override our linting rules in .eslintrc
