@@ -342,5 +342,38 @@ Jenkins good if you want to host your own CI server
 
 
 
+HTTP REQUESTS
+
+- Node: http object and higher level request object
+- Browser: XMLHttpRequest (xhr), Framework-base Fetch
+  - Fetch has strimlined API for hndling http calls but
+  limited browser support. YOu need a polyfil with this
+  option
+  - Fetch is strimlined so does not offer all options of
+  XMLHttpRequest.
+- Node & Browser: isomorphic-fetch is an npm packkage .. 
+works on both the client and server. Can also use xhr.
+Full featured options include axios and SuperAgent.
+Axios provide a clean promise based API
+
+Note: Universal javascript is a term now used to
+describe JS that works on both server and client.
+
+If working only node use Request
+If in browser Fetch with a polyfil
+If on both client or server then any of below
+  - isomorphic-fetch
+  - xhr
+  - SuperAgent: larger library but greater features
+  - Axios: larger library but greater features
+
+Centralize API calls
+
+Allows you to
+- Handle Preloader logic
+- Handle keys, base urls etc
+
+
+
 
 
