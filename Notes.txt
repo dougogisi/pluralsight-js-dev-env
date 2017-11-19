@@ -373,7 +373,27 @@ Allows you to
 - Handle Preloader logic
 - Handle keys, base urls etc
 
+Selecttive polyfil
+- use polyfil.io checks if browser alreayd supports
+functionality so unneeded polyfils arent used.
 
 
+Mock API
+- Static json
+- JSON Servers
+- JSON Server + JSON Schema faker
+- Express server etc
+
+Chosen Approach
+- Delare Our Schema
+  - JSOn Schema faker
+
+- Generate Radom data
+  - faker.js
+  - chance.js
+  - randexp.js
+
+- Serve Data via API
+  - JSON Server
 
 
