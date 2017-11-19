@@ -396,6 +396,12 @@ Chosen Approach
 - Serve Data via API
   - JSON Server
 
+
+Project structure
+
+- JS Belongs in a .js file
+- Consider organizing by featured
+- Extract logic to POJOs
   
 
 
