@@ -402,6 +402,19 @@ Project structure
 - JS Belongs in a .js file
 - Consider organizing by featured
 - Extract logic to POJOs
-  
+
+
+Production Build
+
+- Minification
+- Sourcemaps
+- Dynamic HTML
+- Cache busting
+- Bundle splitting
+- Error logging
+
+
+
+
 
 
