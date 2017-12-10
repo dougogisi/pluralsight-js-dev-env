@@ -419,3 +419,9 @@ Dynamic Html Gneration
 - Hard code
 - Manipulate via Node
 - use html-webpack-plugin
+
+
+Cache busting
+- Allows you to cache js for year as you can bust cache when NEEDED
+- use html-webpack-plugin with webpack-md5-hash to setup
+- you should configure your server to send far furture headers
