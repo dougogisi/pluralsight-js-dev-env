@@ -412,3 +412,10 @@ Production Build
 - Cache busting
 - Bundle splitting
 - Error logging
+
+
+Dynamic Html Gneration
+
+- Hard code
+- Manipulate via Node
+- use html-webpack-plugin
