@@ -1,7 +1,8 @@
-import path from 'path';
 import webpack from 'webpack';
-import HtmlWebPackPlugin from 'html-webpack-plugin';
+import path from 'path';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
 import WebpackMd5Hash from 'webpack-md5-hash';
+import ExtractTextPlugin from 'extract-text-webpack-plugin';
 
 export default {
   debug: true,
@@ -18,7 +19,10 @@ export default {
     filename: '[name].[chunkhash].js'
   },
   plugins: [
-    // Hash the files useding MD5 so that their names change when the content changes.
+    // Generate an external css file with a hash in the filename
+    new ExtractTextPlugin('[name].[contenthash].css'),
+
+    // Hash the files using MD5 so that their names change when the content changes.
     new WebpackMd5Hash(),
 
     // Use CommonsChunkPlugin to create a separate bundle
@@ -28,8 +32,7 @@ export default {
     }),
 
     // Create HTML file that includes reference to bundled JS.
-    // by setting inject to true it tells webpack to inject any needed script tags
-    new HtmlWebPackPlugin({
+    new HtmlWebpackPlugin({
       template: 'src/index.html',
       minify: {
         removeComments: true,
@@ -43,19 +46,19 @@ export default {
         minifyCSS: true,
         minifyURLs: true
       },
-      inject: true
+      inject: true,
     }),
 
     // Eliminate duplicate packages when generating bundle
     new webpack.optimize.DedupePlugin(),
-    
+
     // Minify JS
     new webpack.optimize.UglifyJsPlugin()
   ],
   module: {
     loaders: [
       {test: /\.js$/, exclude: /node_modules/, loaders: ['babel']},
-      {test: /\.css$/, loaders: ['style','css']}
+      {test: /\.css$/, loader: ExtractTextPlugin.extract('css?sourceMap')}
     ]
   }
-}
+};
