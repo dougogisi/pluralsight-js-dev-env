@@ -428,4 +428,6 @@ Cache busting
 
 
 
-Track JS For error logging
+- TrackJS For error logging
+- Heroku for API 
+- Surge for static frontend
